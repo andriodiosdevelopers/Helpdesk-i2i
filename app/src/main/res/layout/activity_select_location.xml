@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".activities.SelectLocation">
+
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/yellow_bar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageview_services"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/image_allcategoryifazidesk" />
+
+            <TextView
+                android:id="@+id/textview_tellus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageview_services"
+                android:gravity="center_horizontal"
+                android:text="Tell Us\nWhere you want to raise the ticket?"
+                android:textColor="#000000"
+                android:textSize="16.5dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_selectplace"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textview_tellus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_selectcompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/drawable_redborder"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp">
+
+                    <ImageView
+                        android:id="@+id/imageview_icon_company"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_company" />
+
+                    <TextView
+                        android:id="@+id/textview_company_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/imageview_icon_company"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="top|left"
+                        android:text="Select Company"
+                        android:textColor="#696969"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/textview_companyname"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageview_icon_company"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:text="Selected Company Name"
+                        android:textColor="#000000"
+                        android:textSize="19dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_selectlocation"
+                    android:layout_width="162dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/drawable_redborder"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/rl_selectcompany">
+
+                    <ImageView
+                        android:id="@+id/imageview_icon_location"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_location" />
+
+                    <TextView
+                        android:id="@+id/textview_location_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/imageview_icon_location"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="top|left"
+                        android:text="Select Location"
+                        android:textColor="#696969"
+                        android:textSize="9dp" />
+
+                    <TextView
+                        android:id="@+id/textview_locationname"
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageview_icon_location"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:text="Selected Location Name "
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_selectbuilding"
+                    android:layout_width="162dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/drawable_redborder"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/rl_selectcompany">
+
+                    <ImageView
+                        android:id="@+id/imageview_icon_building"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_building" />
+
+                    <TextView
+                        android:id="@+id/textview_building_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/imageview_icon_building"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="top|left"
+                        android:text="Select Building"
+                        android:textColor="#696969"
+                        android:textSize="9dp" />
+
+                    <TextView
+                        android:id="@+id/textview_buildingname"
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageview_icon_building"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:text="Selected Building Name "
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_selectfloor"
+                    android:layout_width="162dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/rl_selectlocation"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/drawable_redborder"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp">
+
+                    <ImageView
+                        android:id="@+id/imageview_icon_floor"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_floor" />
+
+                    <TextView
+                        android:id="@+id/textview_floor_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/imageview_icon_floor"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="top|left"
+                        android:text="Select Floor"
+                        android:textColor="#696969"
+                        android:textSize="9dp" />
+
+                    <TextView
+                        android:id="@+id/textview_floorname"
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageview_icon_floor"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:text="Selected Floor Name "
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_selectwing"
+                    android:layout_width="162dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/rl_selectlocation"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/drawable_redborder"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="2.5dp">
+
+                    <ImageView
+                        android:id="@+id/imageview_icon_wing"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_wing" />
+
+                    <TextView
+                        android:id="@+id/textview_wing_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/imageview_icon_wing"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="top|left"
+                        android:text="Select Wing"
+                        android:textColor="#696969"
+                        android:textSize="9dp" />
+
+                    <TextView
+                        android:id="@+id/textview_wingname"
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageview_icon_wing"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="2"
+                        android:paddingLeft="5dp"
+                        android:text="Selected Wing Name "
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_selectplace"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="#A9A9A9"
+                android:text="Next"
+                android:textSize="19dp"
+                android:textColor="#FFFFFF" />
+            <!--android:background="@drawable/drawable_button_new"-->
+        </RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

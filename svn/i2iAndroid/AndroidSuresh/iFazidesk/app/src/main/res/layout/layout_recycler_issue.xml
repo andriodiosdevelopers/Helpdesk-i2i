@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+ 
+        <RelativeLayout
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_margin="3.5dp"
+            android:elevation="2.5dp">
+    	
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:padding="12.5dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_launcher"
+                android:background="@drawable/drawable_circleimageview"
+                />
+            
+                <TextView 
+        android:id="@+id/issuename"
+        android:layout_toRightOf="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="ISSUE NAME"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="19dp"/>
+                
+             <TextView 
+        android:id="@+id/issueid"
+        android:layout_width="wrap_content"        
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image"
+        android:text="ISSUE ID"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:visibility="gone"
+        />
+            <TextView 
+                android:id="@+id/priority_label"
+                android:layout_below="@+id/issuename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBaseline="@+id/priority"                
+                android:text="PRIORITY:"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+            
+            
+            <TextView 
+                android:id="@+id/priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/issuename"
+                android:layout_toRightOf="@+id/priority_label"                              
+                android:text="Vpriority"
+                android:layout_marginTop="2dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"/>
+            
+            <TextView 
+                android:id="@+id/semicolon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:text=" : "
+                android:textColor="#000000"
+                android:layout_toRightOf="@+id/image"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+            
+            <TextView 
+                android:id="@+id/resolutiontime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_toRightOf="@+id/image" 
+                android:layout_alignLeft="@+id/priority_label"              
+                android:text="resolution time "
+                android:textColor="#000000"                
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/priority_label"                
+                />
+            <TextView
+                android:id="@+id/imageurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image"
+                android:layout_alignLeft="@+id/priority_label"
+                android:text="resolution time "
+                android:textColor="#000000"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"
+                android:layout_below="@+id/priority_label"
+                />
+            
+            
+            
+            <TextView 
+                android:id="@+id/priority_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:text="Vpriorityid"
+                android:textColor="#000000"
+                android:layout_toRightOf="@+id/image"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                />
+            
+              <TextView 
+                android:id="@+id/responsetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:text="responsetime"
+                android:textColor="#000000"
+                android:layout_toRightOf="@+id/image"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/image_icon_rightarrow"
+                android:scaleType="centerInside"/>
+
+            		
+        </RelativeLayout>
+<!-- 	<ImageView 
+                android:id="@+id/image"               
+                android:layout_width="120dp"
+                android:layout_height="120dp"                
+                />
+ -->
+</RelativeLayout>

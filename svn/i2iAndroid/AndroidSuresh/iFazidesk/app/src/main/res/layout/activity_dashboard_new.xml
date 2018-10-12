@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_whitetransparent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rl_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="#7D1111"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+                    <ImageView
+                        android:id="@+id/imageview_usericon"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/image_user"
+                        />
+                    <TextView
+                        android:id="@+id/textview_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_toRightOf="@+id/imageview_usericon"
+                        android:text="Username"
+                        android:textSize="17.5dp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:padding="1dp"
+                        android:gravity="left|center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/textview_usercompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_toRightOf="@+id/imageview_usericon"
+                        android:text="User Company"
+                        android:layout_below="@+id/textview_username"
+                        android:textSize="13.5dp"
+                        android:padding="1dp"
+                        android:textColor="#ffffff"
+                        android:gravity="left|top"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imageview_user"
+                    android:layout_width="108dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/image_logo_rmz"
+                    android:scaleType="centerInside" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone">
+                    <ImageView
+                        android:id="@+id/imageview_new"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:padding="1dp"
+                        android:src="@drawable/image_add"
+                        android:scaleType="centerInside"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:id="@+id/textview_new"
+                        android:layout_width="36dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/imageview_new"
+                        android:textColor="#ffffff"
+                        android:padding="2dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="New"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_companyname"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/bg_red"
+                android:backgroundTint="@color/bg_red"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone"
+                android:layout_below="@+id/rl_imageview">
+
+                <!--<RelativeLayout
+                    android:id="@+id/rl_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+                    <ImageView
+                        android:id="@+id/imageview_usericon"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/image_user"
+                        />
+                    <TextView
+                        android:id="@+id/textview_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_toRightOf="@+id/imageview_usericon"
+                        android:text="Username"
+                        android:textSize="16.5dp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:padding="1dp"
+                        android:gravity="left|center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/textview_usercompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_toRightOf="@+id/imageview_usericon"
+                        android:text="User Company"
+                        android:layout_below="@+id/textview_username"
+                        android:textSize="13dp"
+                        android:padding="1dp"
+                        android:textColor="#ffffff"
+                        android:gravity="left|top"/>
+                </RelativeLayout>-->
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lt_companylocation"
+                android:layout_below="@+id/rl_companyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_companylist"
+                        android:layout_width="156dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true">
+
+                        <TextView
+                            android:id="@+id/textview_companyname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:maxWidth="120dp"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical|left"
+                            android:singleLine="true"
+                            android:paddingLeft="2.5dp"
+                            android:maxLength="19"
+                            android:text="Selected Company Name"
+                            android:textColor="#ffffff"
+                            android:textSize="12.5dp" />
+
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/textview_companyname"
+                            android:src="@drawable/icon_dropdown"
+                            android:padding="7.5dp"
+                            android:background="@null"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_locationlist"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="156dp"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:id="@+id/textview_locationname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:maxWidth="120dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/imageview_locationlist"
+                            android:gravity="center_vertical|right"
+                            android:singleLine="true"
+                            android:maxLength="19"
+                            android:paddingRight="2.5dp"
+                            android:text="Selected Location Name"
+                            android:textColor="#ffffff"
+                            android:textSize="12.5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageview_locationlist"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/icon_dropdown_white"
+                            android:padding="7.5dp"
+                            android:background="@null"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <Spinner
+                    android:id="@+id/spinner_selectcompany"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:minHeight="40dp"
+                    android:minWidth="120dp"
+                    android:paddingRight="35dp"
+                    android:paddingLeft="5dp"
+                    android:spinnerMode="dialog"
+                    android:gravity="right|center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:visibility="gone"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_selectlocation"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:paddingRight="35dp"
+                    android:minHeight="40dp"
+                    android:spinnerMode="dialog"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/spinner_selectcompany"
+                    android:gravity="left|center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint = "@color/colorPrimary"
+        android:src="@drawable/icon_add_white" />
+</android.support.design.widget.CoordinatorLayout>

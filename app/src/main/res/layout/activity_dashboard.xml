@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_back"
+    tools:context="helpdesk.i2i.com.ifazidesk.activities.Dashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_root"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+                android:id="@+id/rl_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@color/bg_red"
+                android:padding="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+            <ImageView
+             android:id="@+id/imageview_user"
+             android:layout_width="108dp"
+             android:layout_height="54dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:padding="0.5dp"
+             android:src="@drawable/image_logo_rmz"
+             android:scaleType="centerInside" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/imageview_new"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="1dp"
+                    android:src="@drawable/image_add"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:id="@+id/textview_new"
+                    android:layout_width="36dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/imageview_new"
+                    android:textColor="#ffffff"
+                    android:padding="2dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="New"/>
+                    </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_companyname"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/bg_red"
+                android:backgroundTint="@color/bg_red"
+                android:backgroundTintMode="multiply"
+                android:layout_below="@+id/rl_imageview">
+
+                <RelativeLayout
+                    android:id="@+id/rl_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/imageview_usericon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:src="@drawable/image_user"
+                    />
+                <TextView
+                    android:id="@+id/textview_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@+id/imageview_usericon"
+                    android:text="Username"
+                    android:textSize="16.5dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:padding="1dp"
+                    android:gravity="left|center_vertical"/>
+
+                <TextView
+                    android:id="@+id/textview_usercompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@+id/imageview_usericon"
+                    android:text="User Company"
+                    android:layout_below="@+id/textview_username"
+                    android:textSize="13dp"
+                    android:padding="1dp"
+                    android:textColor="#ffffff"
+                    android:gravity="left|top"/>
+            </RelativeLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lt_companylocation"
+                android:layout_below="@+id/rl_companyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                >
+
+               <!-- <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_company"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="25dp"
+                    android:spinnerMode="dialog"
+                    app:ms_arrowColor="@color/colorPrimary"
+                    app:ms_floatingLabelColor="@color/colorPrimary"
+                    app:ms_floatingLabelText="Company"
+                    app:ms_hint="Select Company"
+                    app:ms_multiline="true"
+                    app:ms_enableFloatingLabel="false"
+                    />-->
+                <Spinner
+                    android:id="@+id/spinner_company"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:paddingRight="25dp"
+                    android:spinnerMode="dialog"
+                    android:backgroundTint="#ffffff"
+                    android:layout_alignParentLeft="true"
+                    />
+
+            <Spinner
+                android:id="@+id/spinner_location"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="25dp"
+                android:minHeight="40dp"
+                android:spinnerMode="dialog"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="#ffffff"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textview_date"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/lt_companylocation"
+                android:textColor="@color/bg_white"
+                android:textSize="17dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Today"/>
+
+            <RelativeLayout
+                android:id="@+id/lt_status"
+                android:layout_below="@+id/textview_date"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="78dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="78dp"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:background="#0D000000"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lt_status"
+                android:padding="5dp">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_tickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0D000000"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

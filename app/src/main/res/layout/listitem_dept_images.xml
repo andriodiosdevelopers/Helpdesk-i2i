@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:layout_margin="5dp"
+    android:elevation="2dp"
+     >
+
+    <ImageView
+        android:id="@+id/imageviewid"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerInside"
+        android:padding="8.5dp"
+        android:elevation="2dp"
+        android:background="@drawable/drawable_circleimageview"
+        />
+   <!-- <helpdesk.i2i.com.ifazidesk.adapter.CircularImageView
+        android:id="@+id/imageviewid"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dp"
+        android:elevation="5dp"
+        android:scaleType="centerInside"
+        />-->
+    <TextView 
+        android:id="@+id/deptname"
+        android:layout_toRightOf="@+id/imageviewid"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEPT NAME"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    	
+  <TextView
+        android:id="@+id/deptdesc"
+       android:layout_below="@+id/deptname"
+        android:layout_width="wrap_content"        
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageviewid"
+        android:text="DEPT DESC"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        />
+    	
+             <TextView 
+        android:id="@+id/deptid"
+        android:layout_width="wrap_content"        
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deptdesc"
+        android:text="ISSUE ID"
+        android:layout_toRightOf="@+id/imageviewid"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:visibility="gone"
+        />         
+            
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/image_icon_rightarrow"
+                android:scaleType="centerInside"/>
+                    
+    </RelativeLayout>
+</RelativeLayout>
