@@ -1,1 +1,0 @@
-# ifazidesk-androidapp
